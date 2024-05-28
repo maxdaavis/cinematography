@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cinematography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>My Cinematography Portfolio</h1>
+            <p>Discover the films I've shot and my journey as a cinematographer.</p>
+        </div>
+    </header>
+    <main>
+        <section id="portfolio" class="film-gallery">
+            <div class="film" onclick="openModal('modal1')">
+                <img src="film1-thumbnail.jpg" alt="Film 1">
+                <h2>Film Title 1</h2>
+            </div>
+            <div class="film" onclick="openModal('modal2')">
+                <img src="film2-thumbnail.jpg" alt="Film 2">
+                <h2>Film Title 2</h2>
+            </div>
+            <!-- Add more films as needed -->
+        </section>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>A brief bio about your career and achievements. Highlight significant projects and collaborations.</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Modals for detailed film information -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Film Title 1</h2>
+            <p>Detailed description and credits for Film 1.</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Film Title 2</h2>
+            <p>Detailed description and credits for Film 2.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
